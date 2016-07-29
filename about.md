@@ -10,8 +10,7 @@ This site is supposed to serve as a main hub that links to our projects.
 here in the future.
 
 You can find the source code for this site at
-[CoraleStudios][cs] / [coralestudios.github.io][]
+{% include icon-github.html username=site.github_username %} / [coralestudios.github.io][]
 
 [Colore]: http://colore.coralestudios.com
-[cs]: https://github.com/CoraleStudios
 [coralestudios.github.io]: https://github.com/CoraleStudios/coralestudios.github.io
