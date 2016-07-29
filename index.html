@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="home">
+  <p>Developing integration solutions for Razer Chroma and C#/.NET.</p>
+
+  <h1 class="page-heading">Projects</h1>
+
+  <p><strong><a href="http://colore.coralestudios.com">Colore</a>:</strong>
+    A powerful C# library for interacting with Razer's Chroma SDK.</p>
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% if site.posts == empty %}
+    <p>There are no blog posts at the moment.</p>
+    {% else %}
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+    {% endif %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
